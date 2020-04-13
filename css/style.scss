@@ -82,13 +82,13 @@ a {
   }
   .con1 {
     display: flex;
+    flex-direction:row;
     justify-content: center;
     #search-rest {
-      border-radius: 20px;
-      padding: 3px;
       padding-left: 20px;
       margin: 15px;
       width: 490px;
+      height:35px;
     }
     .dropdown {
       margin: 15px;
@@ -97,7 +97,7 @@ a {
       width: 90px;
       border-radius: 5px;
     }
-    .search-btn {
+    .btn {
       margin: 15px;
       margin-left: 1px;
       height: 35px;
