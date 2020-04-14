@@ -41,26 +41,31 @@
     
     <!--search_bar and logo-->
     <section class="banner">
-      <div class="banner-wrapper">
-        <a href="#"><span class="span1" id="id2">Create an account</span></a>
-        <a href="#"><span class="span1"> Log in</span></a>
+      <div class="sec-top">
+          <div><h6>Log In</h6></div>
+          <div class="btn">
+              <button class="btn" type="button">
+                  Create Account
+              </button>  
+          </div>
       </div>
-      <img class="zomatologo" src="images/zomatologo.PNG" alt="zomatologo" />
-      <p id="banner-text" class="text-center">Find the best restaurants, cafés, and bars in Mumbai</p>
-      <div class="con1">
-        <select class="dropdown">
-          <option value="volvo">Mumbai</option>
-          <option value="saab">Varanasi</option>
-          <option value="opel">Ayodhya</option>
-          <option value="audi">Delhi</option>
-        </select>
-        <div class="search-restaurant">
-          <input type="text" id="search-rest" placeholder="Search for restaurants or cuisines....">
-        </div>
-        <button class="btn search-btn" type="button"> Search </button>
-      </div>
+          <div class="search">
+                  <img class="logo" src="images/zomato_flat_bg_logo.svg" alt="logo">
+                  <h2>Find the best restaurants, cafés, and bars in Mumbai</h2>
+              </div>    
+                  <div class="search-restaurant">
+                      <div  id="search-loc">
+                          <select id="inputState" class="form-control">
+                              <option selected>Mumbai</option>
+                              <option>...</option>
+                          </select>
+                          </div>
+                          <div  id="search-res">
+                          <input id="search-rest" type="text" class="form-control" placeholder="Search for restaurants or cuisines..." id="inputCity">
+                          </div>
+                      <div ><button id="search-btn" class="search-btn btn">Search</button></div>
+                  </div>
     </section>
-    
     <!--------------------Collection & order Food Online------------------------------------->
     <section class="collection-container">
       <section class="collection">
