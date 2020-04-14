@@ -1,6 +1,5 @@
-@use './reset.scss';
-
-/* Add your css here */
+use 
+  /*Add your css here */
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -43,74 +42,108 @@ a {
   list-style-type: none;
 }
 .banner {
-  background-image: url("../images/bg.jpg");
+  width: 100%;
+  background-image: url(bg.jpg);
   background-size: cover;
-  a {
-    float: right;
-    span {
-      float: right;
-      color: white;
-      font-size: 18px;
-      font-weight: 500;
-      margin: 10px;
-      padding: 8px;
-      &:hover {
-        background-color: #cb202d;
-        border-radius: 5px;
-      }
-    }
-    #id2 {
-      border: 2px solid white;
-      border-radius: 5px;
-    }
-  }
-  .zomatologo {
-    clear: both;
-    border: 1px solid rgb(199, 64, 64);
-    border-radius: 10px;
-    display: block;
-    width: 150px;
-    height: auto;
-    margin: 25px auto;
-    margin-top: 100px;
-  }
-  p {
-    font-size: 21px;
-    font-weight: 500;
-    text-align: center;
-    color: white;
-  }
-  .con1 {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    #search-rest {
-      padding-left: 20px;
-      margin: 15px;
-      width: 490px;
-      height:35px;
-    }
-    .dropdown {
-      margin: 15px;
-      margin-right: 1px;
-      height: 35px;
-      width: 90px;
-      border-radius: 5px;
-    }
-    .btn {
-      margin: 15px;
-      margin-left: 1px;
-      height: 35px;
-      width: 90px;
-      border-radius: 5px;
-      background-color: #cb202d;
-      &:hover {
-        background-color: #e9535f;
-        border-radius: 5px;
-        height: 37px;
-      }
-    }
-  }
+  height: auto;
+}
+
+.banner .sec-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: right;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 10px;
+}
+
+.banner .sec-top h6 {
+  color: white;
+  padding-right: 15px;
+}
+
+.banner .sec-top button {
+  border: 1px solid white;
+  background-color: none;
+  color: white;
+}
+
+.search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search .logo {
+  width: 200px;
+}
+
+.search h2 {
+  font-size: 32px;
+  float: left;
+  color: white;
+  text-align: center;
+}
+
+.search-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.search-restaurant #search-res {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  border: white;
+  margin: 5px;
+}
+
+.search-restaurant #search-loc {
+  margin-top: 0px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  border: white;
+}
+.search-restaurant .search-btn {
+  background-color: #ff3d3d;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 8px 1px #f8f3f3;
+          box-shadow: 0px 0px 8px 1px #f8f3f3;
 }
 .collection-container{
  
@@ -343,5 +376,3 @@ a {
   padding-left: 150px;
   list-style-type: none;
 }
- 
- 
